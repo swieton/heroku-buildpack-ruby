@@ -1,6 +1,16 @@
 Heroku buildpack: Ruby
 ======================
 
+Rubygems.org Workaround
+-----------------------
+To get around temporary ruby deploy block you can set a custom BUILDPACK_URL by running this command.
+
+    $ heroku config:add BUILDPACK_URL=https://github.com/heroku/heroku-buildpack-ruby.git
+
+
+Intro
+-----
+
 This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Ruby, Rack, and Rails apps. It uses [Bundler](http://gembundler.com) for dependency management.
 
 Usage
